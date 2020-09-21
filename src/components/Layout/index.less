@@ -1,0 +1,31 @@
+@import url('../index.less');
+
+.rtLayout {
+  margin-left: -(@react-timelines-sidebar-width - @react-timelines-sidebar-closed-offset);
+
+  @media (min-width: @react-timelines-auto-open-breakpoint) {
+    margin-left: 0;
+  }
+
+  &.rtIsOpen {
+    margin-left: 0;
+  }
+}
+
+.rtLayoutSide {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  width: @react-timelines-sidebar-width;
+  vertical-align: top;
+}
+
+.rtLayoutMain {
+  display: inline-block;
+  width: calc(100% - @react-timelines-sidebar-width);
+  vertical-align: top;
+}
+
+.rtLayoutTimeline {
+  overflow-x: auto;
+}

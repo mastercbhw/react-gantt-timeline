@@ -1,0 +1,55 @@
+@import url('../index.less');
+
+.rtControls {
+  display: inline-block;
+  padding: 8px;
+  margin: 0 0 @react-timelines-spacing 0;
+  background-color: #fff;
+}
+
+
+.rtControlsButton {
+  display: inline-block;
+  width: @react-timelines-button-size;
+  height: @react-timelines-button-size;
+  overflow: hidden;
+  background-color: @react-timelines-button-background-color;
+  color: transparent;
+  white-space: nowrap;
+  padding: @react-timelines-spacing;
+  outline: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: @react-timelines-button-background-color-hover;
+  }
+
+  &:focus,
+  &:active {
+    background-color: @react-timelines-button-background-color-hover;
+  }
+}
+
+.rtControlsButton[disabled] {
+  opacity: 0.5;
+}
+
+.rtControlsButtonToggle {
+  @media (min-width: @react-timelines-auto-open-breakpoint) {
+    display: none;
+  }
+}
+
+.rtVisuallyHidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

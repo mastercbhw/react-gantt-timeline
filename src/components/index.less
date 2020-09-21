@@ -1,0 +1,54 @@
+// Common
+@react-timelines-spacing: 10px;
+@react-timelines-keyline-color: #eee;
+@react-timelines-separator-dark-color: darken(@react-timelines-keyline-color, 10%);
+
+@react-timelines-auto-open-breakpoint: 1000px;
+@react-timelines-font-family: sans-serif;
+@react-timelines-border-width: 1px;
+@react-timelines-text-color: #4c4c4c;
+
+// Header
+@react-timelines-header-row-height: 40px;
+@react-timelines-header-separator-color: @react-timelines-separator-dark-color;
+
+// Sidebar
+@react-timelines-sidebar-width: 240px;
+@react-timelines-sidebar-closed-offset: 40px;
+@react-timelines-sidebar-background-color: #fff;
+@react-timelines-sidebar-separator-color: @react-timelines-keyline-color;
+@react-timelines-sidebar-key-indent-width: 20px;
+@react-timelines-sidebar-key-icon-size: 16px;
+@react-timelines-sidebar-key-icon-hover-color: #eee;
+
+// Timebar
+@react-timelines-timebar-cell-background-color: #fff;
+
+// Track / Elements
+@react-timelines-track-height: 60px;
+@react-timelines-element-spacing: @react-timelines-spacing;
+
+// Markers
+@react-timelines-marker-line-width: 2px;
+@react-timelines-marker-now-background-color: #ff007f;
+@react-timelines-marker-pointer-background-color: #888;
+@react-timelines-marker-line-transparency: 0.5;
+
+// Controls
+@react-timelines-button-background-color: #fff;
+@react-timelines-button-background-color-hover: #f0f0f0;
+@react-timelines-button-size: 44px;
+
+
+.rtTimebarKey {
+  height: @react-timelines-header-row-height + @react-timelines-border-width;
+  padding-right: @react-timelines-sidebar-key-indent-width;
+  line-height: @react-timelines-header-row-height;
+  text-align: right;
+  font-weight: bold;
+  border-bottom: 1px solid @react-timelines-sidebar-separator-color;
+
+  &:last-child {
+    border-bottom-color: @react-timelines-header-separator-color;
+  }
+}

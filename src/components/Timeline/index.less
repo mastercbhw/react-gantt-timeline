@@ -1,0 +1,26 @@
+.rtTimeline {
+  position: relative;
+  overflow: hidden;
+}
+
+.rtTimelineHeader {}
+
+.rtTimelineHeaderScroll {
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.rtTimelineHeader.rtIsSticky {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.rtTimelineBody {
+  position: relative;
+  background: white;
+}
