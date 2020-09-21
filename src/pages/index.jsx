@@ -4,6 +4,7 @@ import { buildTimebar, buildTrack } from '@/utils/builders'
 import { fill } from '@/utils/utils'
 import { START_YEAR, NUM_OF_YEARS, NUM_OF_TRACKS } from '@/utils/constants'
 import Timeline from './gantt'
+
 const timebar = buildTimebar()
 
 const now = new Date('2021-01-01')
